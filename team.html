@@ -5,10 +5,14 @@
     <title>Medallion Jewelers</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="nav.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="nav-overlay"></div>
     <nav>
-      <img src="img/logo.png" alt="" class="logo">
+      <a href="index.html"><a href="index.html"><img src="img/logo.png" alt="" class="logo"></a></a>
       <ul>
         <a href="index.html"><li>Home</li></a>
         <a href="jewelry.html"><li>Jewelry</li></a>
@@ -18,6 +22,19 @@
         <a href="team.html"><li class="active">Team</li></a>
         <a href="contact.html"><li>Contact</li></a>
       </ul>
+      <ul class="mobile-nav">
+        <i id="close" class="fa fa-times fa-lg"></i>
+        <a href="index.html"><li>Home</li></a>
+        <a href="jewelry.html"><li>Jewelry</li></a>
+        <a href="vintage-jewelry.html"><li>Vintage Jewelry</li></a>
+        <a href="gem-info.html"><li>Gem Info</li></a>
+        <a href="love-stories.html"><li>Love Stories</li></a>
+        <a href="team.html"><li class="active">Team</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+      <div class="navicon">
+        <i class="fa fa-navicon fa-2x"></i>
+      </div>
     </nav>
     <div id="team">
       <section class="splash">
@@ -25,27 +42,27 @@
         <p>Occupy kitsch plaid cornhole tattooed sartorial four dollar toast pour-over. Irony tilde retro, messenger bag hammock gluten-free seitan +1 intelligentsia literally. Chicharrones ramps forage, vegan tousled wayfarers franzen. Biodiesel heirloom migas umami cold-pressed, knausgaard vinyl marfa affogato iPhone 3 wolf moon waistcoat. Tofu marfa cliche synth gochujang, knausgaard chartreuse. Cardigan cornhole irony, plaid bitters XOXO keffiyeh. Microdosing pop-up 3 wolf moon crucifix sriracha.</p>
       </section>
       <section>
-        <div class="col-4">
+        <div class="col-4 col-sm-6">
           <img class="img-responsive" src="img/team1.png" alt="">
           <h2>Alex</h2>
           <p>Store Owner</p>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-sm-6">
           <img class="img-responsive" src="img/team2.png" alt="">
           <h2>Patricia</h2>
           <p>Sales</p>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-sm-6">
           <img class="img-responsive" src="img/team3.png" alt="">
           <h2>Janet</h2>
           <p>Office Manager</p>
         </div>
-        <div class="col-4 offset-2">
+        <div class="col-4 col-sm-6 offset-2">
           <img class="img-responsive" src="img/team4.png" alt="">
           <h2>Aaron</h2>
           <p>Greeter</p>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-sm-6">
           <img class="img-responsive" src="img/team5.png" alt="">
           <h2>Leo</h2>
           <p>Greeter</p>

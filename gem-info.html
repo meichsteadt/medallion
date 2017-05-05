@@ -5,10 +5,14 @@
     <title>Medallion Jewelers</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="nav.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="nav-overlay"></div>
     <nav>
-      <img src="img/logo.png" alt="" class="logo">
+      <a href="index.html"><a href="index.html"><img src="img/logo.png" alt="" class="logo"></a></a>
       <ul>
         <a href="index.html"><li>Home</li></a>
         <a href="jewelry.html"><li>Jewelry</li></a>
@@ -18,20 +22,33 @@
         <a href="team.html"><li>Team</li></a>
         <a href="contact.html"><li>Contact</li></a>
       </ul>
+      <ul class="mobile-nav">
+        <i id="close" class="fa fa-times fa-lg"></i>
+        <a href="index.html"><li>Home</li></a>
+        <a href="jewelry.html"><li>Jewelry</li></a>
+        <a href="vintage-jewelry.html"><li>Vintage Jewelry</li></a>
+        <a href="gem-info.html"><li class="active">Gem Info</li></a>
+        <a href="love-stories.html"><li>Love Stories</li></a>
+        <a href="team.html"><li>Team</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+      <div class="navicon">
+        <i class="fa fa-navicon fa-2x"></i>
+      </div>
     </nav>
     <section id="gem-info">
       <h1 class="title">Gem Info</h1>
-      <img src="img/geminfo.png" alt="">
+      <img class="img-responsive" src="img/geminfo.png" alt="">
     </section>
     <section id="color">
       <h1 class="title">Color</h1>
       <div class="col-6">
-        <img src="img/color.png" alt="">
+        <img class="img-responsive" src="img/color.png" alt="">
       </div>
       <div class="col-6">
         <p>Occupy kitsch plaid cornhole tattooed sartorial four dollar toast pour-over. Irony tilde retro, messenger bag hammock gluten-free seitan +1 intelligentsia literally. Chicharrones ramps forage, vegan tousled wayfarers franzen. Biodiesel heirloom migas umami cold-pressed.</p>
       </div>
-      <img class="scale" src="img/colorscale.png" alt="">
+      <img class="img-responsive scale" src="img/colorscale.png" alt="">
     </section>
     <section id="clarity">
       <h1 class="title">Clarity</h1>
@@ -39,14 +56,14 @@
         <p>Occupy kitsch plaid cornhole tattooed sartorial four dollar toast pour-over. Irony tilde retro, messenger bag hammock gluten-free seitan +1 intelligentsia literally. Chicharrones ramps forage, vegan tousled wayfarers franzen. Biodiesel heirloom migas umami cold-pressed.</p>
       </div>
       <div class="col-6">
-        <img src="img/clarity.png" alt="">
+        <img class="img-responsive" src="img/clarity.png" alt="">
       </div>
-      <img class="scale" src="img/clarityscale.png" alt="">
+      <img class="img-responsive scale" src="img/clarityscale.png" alt="">
     </section>
     <section id="cut">
       <h1 class="title">Cut</h1>
       <div class="col-6">
-        <img src="img/cut.png" alt="">
+        <img class="img-responsive" src="img/cut.png" alt="">
       </div>
       <div class="col-6">
         <p>Occupy kitsch plaid cornhole tattooed sartorial four dollar toast pour-over. Irony tilde retro, messenger bag hammock gluten-free seitan +1 intelligentsia literally. Chicharrones ramps forage, vegan tousled wayfarers franzen. Biodiesel heirloom migas umami cold-pressed.</p>
@@ -58,7 +75,7 @@
         <p>Occupy kitsch plaid cornhole tattooed sartorial four dollar toast pour-over. Irony tilde retro, messenger bag hammock gluten-free seitan +1 intelligentsia literally. Chicharrones ramps forage, vegan tousled wayfarers franzen. Biodiesel heirloom migas umami cold-pressed.</p>
       </div>
       <div class="col-6">
-        <img src="img/carat.png" alt="">
+        <img class="img-responsive" src="img/carat.png" alt="">
       </div>
     </section>
     <footer>

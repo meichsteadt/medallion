@@ -2,13 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Medallion Jewelers</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="nav.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="nav-overlay"></div>
     <nav>
-      <img src="img/logo.png" alt="" class="logo">
+      <a href="index.html"><a href="index.html"><img src="img/logo.png" alt="" class="logo"></a></a>
       <ul>
         <a href="index.html"><li class="active">Home</li></a>
         <a href="jewelry.html"><li>Jewelry</li></a>
@@ -18,8 +23,22 @@
         <a href="team.html"><li>Team</li></a>
         <a href="contact.html"><li>Contact</li></a>
       </ul>
+      <ul class="mobile-nav">
+        <i id="close" class="fa fa-times fa-lg"></i>
+        <a href="index.html"><li class="active">Home</li></a>
+        <a href="jewelry.html"><li>Jewelry</li></a>
+        <a href="vintage-jewelry.html"><li>Vintage Jewelry</li></a>
+        <a href="gem-info.html"><li>Gem Info</li></a>
+        <a href="love-stories.html"><li>Love Stories</li></a>
+        <a href="team.html"><li>Team</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+      <div class="navicon">
+        <i class="fa fa-navicon fa-2x"></i>
+      </div>
     </nav>
     <section id="splash">
+      <div class="bg"></div>
       <h1>Timeless Style,
         <br> Uniquely Yours</h1>
       <a href="jewelry.html">
@@ -39,6 +58,7 @@
       </div>
     </section>
     <section class="shop" id="shop-vintage">
+      <div class="bg"></div>
       <div class="content">
         <h2>Vintage Jewelry</h2>
         <p>Occupy kitsch plaid cornhole tattooed sartorial four dollar toast pour-over. Irony tilde retro, messenger bag hammock gluten-free seitan +1 intelligentsia literally. Chicharrones ramps forage, vegan tousled wayfarers franzen. Biodiesel heirloom migas umami cold-pressed.</p>
@@ -56,6 +76,7 @@
       </div>
     </section>
     <section class="shop" id="shop-gold">
+      <div class="bg"></div>
       <div class="content">
         <h2>Buy Gold</h2>
         <p>Occupy kitsch plaid cornhole tattooed sartorial four dollar toast pour-over. Irony tilde retro, messenger bag hammock gluten-free seitan +1 intelligentsia literally. Chicharrones ramps forage, vegan tousled wayfarers franzen. Biodiesel heirloom migas umami cold-pressed.</p>

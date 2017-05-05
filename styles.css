@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  height: 100%;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -77,6 +79,12 @@ hr {
   margin-left: 16.66%;
 }
 
+
+.row-6 {
+  height: 50%;
+  width: 100%;
+}
+
 .row::after {
   content: "";
   display: table;
@@ -116,6 +124,25 @@ hr {
   margin: 20px 0;
 }
 
+@media screen and (max-width: 938px ) {
+  .col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
+    width: 100%;
+  }
+
+  .offset-2, .offset-1 {
+    margin: 0;
+  }
+  .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 550px ) {
+  .col-sm-6 {
+    width: 100%;
+  }
+}
 /* ================================== Nav Styles ================================== */
 nav {
   font-family: Cinzel-Regular;
@@ -125,6 +152,7 @@ nav {
   position: relative;
   box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
   z-index: 999;
+  background-color: #fff;
 }
 
 nav .logo {
@@ -155,14 +183,86 @@ nav li.active {
   color: #962D4B;
 }
 
+nav .navicon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  transition: all .4s ease;
+}
+
+nav .navicon:hover, #close:hover {
+  color: #962D4B;
+  cursor: pointer;
+}
+
+nav .mobile-nav {
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  left: -100%;
+  top: 0;
+  background-color: #fff;
+  transform: translateY(0);
+  margin-top: 0;
+  display: none;
+  z-index: 998;
+  transition: all .4s ease;
+  padding-top: 50px;
+}
+
+.mobile-nav li {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.mobile-nav i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.nav-overlay {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 997;
+  background-color: rgba(55,55,55,0.3)
+}
+
+@media screen and (max-width: 938px ) {
+  nav ul {
+    display: none;
+  }
+
+  nav .mobile-nav {
+    display: block;
+  }
+
+  nav .navicon {
+    display: block;
+  }
+}
 /* ================================== Splash Styles ================================== */
 #splash {
   height: 100vh;
   width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+#splash .bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
   background: url('http://www.rd.com/wp-content/uploads/sites/2/2016/11/06-statement-subtle-ways-sparkle-new-years-outfit-95079359-SanneBerg-1024x683.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 #splash h1 {
@@ -190,6 +290,12 @@ nav li.active {
   left: 20%;
   top: 60%;
   transform: translateX(-50%);
+  transition: all .4s ease;
+}
+
+#splash .call:hover {
+  background-color: #26313d;
+  border-color: #26313d;
 }
 
 #splash h3 {
@@ -198,6 +304,24 @@ nav li.active {
   font-weight: 100;
 }
 
+@media screen and (max-width: 800px) {
+  #splash .bg {
+    background-position: right;
+    background-size: cover;
+    filter: brightness(70%);
+  }
+
+  #splash h1 {
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+  }
+
+  #splash .call {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 /* ================================== Engagement Styles ================================== */
 .featured-product {
   padding: 50px;
@@ -228,10 +352,17 @@ nav li.active {
 }
 /* ================================== Shop Styles ================================== */
 .shop {
-  padding: 50px;
   width: 100%;
   min-height: 100vh;
   position: relative;
+}
+
+.shop .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .shop .content {
@@ -260,22 +391,38 @@ nav li.active {
   line-height: 25px;
   font-weight: 100;
   text-decoration: underline;
+  transition: all .4s ease;
 }
 
-#shop-vintage {
+.shop h3:hover {
+  color: #962D4B;
+}
+
+#shop-vintage .bg {
   background: url('img/Rectangle 1.png');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  filter: brightness(80%);
 }
 
-#shop-gold {
+#shop-gold .bg {
   background: url('img/Rectangle 2.png');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  filter: brightness(80%);
 }
 
+@media screen and (max-width: 550px) {
+  #shop-vintage .bg {
+    background-position: center;
+  }
+  #shop-gold .bg {
+    background-position: -500px 0;
+    background-size: cover;
+  }
+}
 /* ================================== GIA Styles ================================== */
 #gia {
   padding: 50px;
@@ -350,21 +497,39 @@ nav li.active {
   height: 500px;
 }
 
-#love-stories .row-6 {
-  height: 50%;
-  width: 100%;
-}
-
 #love-stories .img {
-  margin: 20px 0;
-  height: 500px;
+  margin: 40px 0;
+}
+#love-stories .img::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
+@media screen and (max-width: 938px) {
+  #love-stories .splash {
+    background-position: -500px 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  #love-stories .col-5, #love-stories .col-7 {
+    height: auto;
+  }
+
+  #jon-ygrette .col-5 {
+    height: auto;
+  }
+
+  #love-stories .row-6 {
+    height: 100%;
+  }
+}
 
 /* ================================== Team Styles ================================== */
 #team > .splash {
   background: url('img/team.png');
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 #team img {
@@ -388,6 +553,8 @@ nav li.active {
 /* ================================== Contact Styles ================================== */
 #contact h3 {
   font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 #contact p {
@@ -441,4 +608,9 @@ footer .medallion {
 
 footer a {
   color: #ECD282;
+  transition: all .4s ease;
+}
+
+footer .ichor:hover a{
+  color: #962D4B;
 }
