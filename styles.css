@@ -200,7 +200,7 @@ nav .navicon:hover, #close:hover {
 nav .mobile-nav {
   position: fixed;
   height: 100%;
-  width: 50%;
+  width: 60%;
   left: -100%;
   top: 0;
   background-color: #fff;

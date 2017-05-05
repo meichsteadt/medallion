@@ -10,4 +10,9 @@ $(function() {
     $('.nav-overlay').hide();
     $('body').css('overflow', '');
   })
+  $('.nav-overlay').click(function() {
+    $('.mobile-nav').css('left', '-100%');
+    $('.nav-overlay').hide();
+    $('body').css('overflow', '');
+  })
 })
