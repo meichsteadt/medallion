@@ -1,0 +1,444 @@
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Cinzel';
+}
+
+a {
+  text-decoration: none;
+  color: #373939;
+}
+
+section {
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+section::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+p {
+  font-family: 'OpenSans-Light';
+  font-size: 20px;
+  color: #373939;
+  font-weight: 100;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+.col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
+  float: left;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333%
+}
+
+.col-5 {
+  width: 41.6666%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.offset-1 {
+  margin-left: 8.33%;
+}
+
+.offset-2 {
+  margin-left: 16.66%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title {
+  font-family: 'Cinzel';
+  font-size: 36px;
+  color: #373939;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #373939;
+  margin-top: 0;
+}
+
+
+.splash {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.splash h1 {
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 50px;
+  font-weight: 100;
+  margin-bottom: 100px;
+}
+
+.splash p {
+  color: #fff;
+  font-weight: 100;
+  line-height: 40px;
+  margin: 20px 0;
+}
+
+/* ================================== Nav Styles ================================== */
+nav {
+  font-family: Cinzel-Regular;
+  font-size: 18px;
+  color: #373939;
+  height: 140px;
+  position: relative;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+nav .logo {
+  display: inline-block;
+  width: 120px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav ul {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav li.active {
+  color: #962D4B;
+}
+
+/* ================================== Splash Styles ================================== */
+#splash {
+  height: 100vh;
+  width: 100%;
+  background: url('http://www.rd.com/wp-content/uploads/sites/2/2016/11/06-statement-subtle-ways-sparkle-new-years-outfit-95079359-SanneBerg-1024x683.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#splash h1 {
+  font-family: 'Cinzel';
+  font-size: 36px;
+  color: #373939;
+  line-height: 50px;
+  position: absolute;
+  margin: 0;
+  top: 20%;
+  left: 20%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+#splash .call {
+  background: #475564;
+  font-family: 'Cinzel';
+  color: #FFFFFF;
+  line-height: 65px;
+  width: 250px;
+  text-align: center;
+  position: absolute;
+  border: 1px solid #ccc;
+  left: 20%;
+  top: 60%;
+  transform: translateX(-50%);
+}
+
+#splash h3 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 100;
+}
+
+/* ================================== Engagement Styles ================================== */
+.featured-product {
+  padding: 50px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.featured-product img {
+  margin: 0 auto;
+  height: 500px;
+}
+
+.featured-product h2 {
+  font-family: 'Cinzel';
+  font-size: 26px;
+  color: #373939;
+  line-height: 25px;
+  text-decoration: none;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.featured-product a {
+  display: block;
+  text-align: center;
+}
+/* ================================== Shop Styles ================================== */
+.shop {
+  padding: 50px;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.shop .content {
+  position: relative;
+  left: 5%;
+}
+
+.shop h2 {
+  font-family: 'Cinzel';
+  font-size: 36px;
+  color: #97F9FC;
+  margin-bottom: 100px;
+}
+
+.shop p {
+  color: #FFFFFF;
+  margin-bottom: 100px;
+  max-width: 500px;
+  line-height: 32px;
+}
+
+.shop h3 {
+  font-family: 'Cinzel';
+  font-size: 24px;
+  color: #ECD282;
+  line-height: 25px;
+  font-weight: 100;
+  text-decoration: underline;
+}
+
+#shop-vintage {
+  background: url('img/Rectangle 1.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#shop-gold {
+  background: url('img/Rectangle 2.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/* ================================== GIA Styles ================================== */
+#gia {
+  padding: 50px;
+  width: 100%;
+}
+
+/* ================================== Jewelry page Styles ================================== */
+#ecommerce {
+  min-height: 100vh;
+}
+
+#ecommerce img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#ecommerce h1 {
+  font-size: 48px;
+  line-height: 50px;
+  margin-top: 0
+}
+
+/* ================================== Gem Info Page Styles ================================== */
+#gem-info img {
+  display: block;
+  margin: 0 auto;
+}
+
+#color img, #clarity img {
+  display: block;
+  width: 100%;
+}
+
+#color img.scale, #clarity img.scale {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* ================================== Love Stories Styles ================================== */
+#love-stories .love-story h1 {
+  font-size: 36px;
+  color: #475564;
+  text-align: center;
+}
+
+#love-stories .love-story p {
+  font-size: 18px;
+  color: #373939;
+  line-height: 26px;
+}
+
+#love-stories img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#love-stories section {
+  min-height: 100vh;
+}
+
+#love-stories .splash {
+  background: url('img/Rectangle.png');
+  background-size: cover;
+  text-align: center;
+}
+
+#love-stories .col-5, #love-stories .col-7 {
+  padding: 0;
+  height: 500px;
+}
+
+#love-stories .row-6 {
+  height: 50%;
+  width: 100%;
+}
+
+#love-stories .img {
+  margin: 20px 0;
+  height: 500px;
+}
+
+
+/* ================================== Team Styles ================================== */
+#team > .splash {
+  background: url('img/team.png');
+  background-size: 100% 100%;
+}
+
+#team img {
+  display: block;
+  margin: 0 auto;
+}
+
+#team .col-4 h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 36px;
+  color: #373939;
+}
+#team .col-4 p {
+  text-align: center;
+  font-size: 24px;
+  color: #373939;
+  margin-top: 0;
+}
+
+/* ================================== Contact Styles ================================== */
+#contact h3 {
+  font-size: 24px;
+}
+
+#contact p {
+  font-family: Cinzel-Regular;
+  text-align: center;
+}
+
+input, textarea {
+  width: 80%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #333;
+  background-color: #fff;
+  margin: 20px auto;
+  font-family: 'Cinzel';
+  font-size: 24px;
+  padding: 20px;
+}
+
+input {
+  height: 50px;
+  padding: 0 10px;
+}
+
+button {
+  background-color: #475564;
+  font-family: 'Cinzel';
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 1px solid #FFFFFF;
+  float: right;
+}
+/* ================================== Footer Styles ================================== */
+footer {
+  background: #475564;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+  padding: 5px;
+}
+
+footer .medallion {
+  font-family: Cinzel-Regular;
+}
+
+footer a {
+  color: #ECD282;
+}
