@@ -507,14 +507,21 @@ nav .mobile-nav {
 
 #color img.scale, #clarity img.scale {
   width: 100%;
-  max-width: 636px;
+  max-width: 980px;
   margin: 0 auto;
   padding-top: 20px;
 }
 
+#color img.scale.mobile, #clarity img.scale.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 683px) {
-  #color img.scale {
+  #color img.scale, #clarity img.scale {
     display: none;
+  }
+  #color img.scale.mobile, #clarity img.scale.mobile {
+    display: block;
   }
 }
 /* ================================== Love Stories Styles ================================== */
