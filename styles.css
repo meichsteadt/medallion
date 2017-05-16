@@ -36,6 +36,12 @@ hr {
   margin: 0 auto;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
 .img-responsive {
   max-width: 100%;
   display: block;
@@ -79,6 +85,10 @@ hr {
   margin-left: 16.66%;
 }
 
+.offset-3 {
+  margin-left: 25%;
+}
+
 
 .row-6 {
   height: 50%;
@@ -101,12 +111,16 @@ hr {
   margin-top: 0;
 }
 
+.text-center {
+  text-align: center;
+}
 
 .splash {
   min-height: 100vh;
   width: 100%;
   text-align: center;
   padding-top: 100px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .splash h1 {
@@ -177,6 +191,11 @@ nav ul {
 nav ul li {
   display: inline-block;
   padding: 10px;
+  transition: all .3s ease;
+}
+
+nav li:hover {
+  color: #97F9FC;
 }
 
 nav li.active {
@@ -186,14 +205,14 @@ nav li.active {
 nav .navicon {
   position: absolute;
   right: 30px;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   display: none;
   transition: all .4s ease;
 }
 
 nav .navicon:hover, #close:hover {
-  color: #962D4B;
+  color: #97F9FC;
   cursor: pointer;
 }
 
@@ -235,6 +254,28 @@ nav .mobile-nav {
   background-color: rgba(55,55,55,0.3)
 }
 
+.phone {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  transition: all .3s ease;
+}
+
+.phone p {
+  font-family: Cinzel-Regular;
+  transition: all .3s ease;
+  display: inline-block;
+  font-size: 26px;
+}
+
+.phone i {
+  font-size: 26px;
+  transition: all .3s ease;
+}
+
+.phone:hover p, .phone:hover i{
+  color: #97F9FC;
+}
 @media screen and (max-width: 938px ) {
   nav ul {
     display: none;
@@ -254,6 +295,7 @@ nav .mobile-nav {
   width: 100%;
   position: relative;
   padding: 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 #splash .bg {
@@ -261,7 +303,8 @@ nav .mobile-nav {
   width: 100%;
   position: absolute;
   background: url('http://www.rd.com/wp-content/uploads/sites/2/2016/11/06-statement-subtle-ways-sparkle-new-years-outfit-95079359-SanneBerg-1024x683.jpg');
-  background-size: 100% 100%;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -355,6 +398,7 @@ nav .mobile-nav {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .shop .bg {
@@ -407,11 +451,11 @@ nav .mobile-nav {
 }
 
 #shop-gold .bg {
-  background: url('img/Rectangle 2.png');
+  background: url('img/gold.jpg');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  filter: brightness(80%);
+  filter: brightness(50%);
 }
 
 @media screen and (max-width: 550px) {
@@ -432,6 +476,10 @@ nav .mobile-nav {
 /* ================================== Jewelry page Styles ================================== */
 #ecommerce {
   min-height: 100vh;
+}
+
+#ecommerce iframe {
+  height: 100vh;
 }
 
 #ecommerce img {
@@ -459,6 +507,7 @@ nav .mobile-nav {
 
 #color img.scale, #clarity img.scale {
   width: 80%;
+  max-width: 636px;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -490,6 +539,7 @@ nav .mobile-nav {
   background: url('img/Rectangle.png');
   background-size: cover;
   text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 #love-stories .col-5, #love-stories .col-7 {
@@ -499,6 +549,7 @@ nav .mobile-nav {
 
 #love-stories .img {
   margin: 40px 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 #love-stories .img::after {
   content: '';
@@ -530,11 +581,16 @@ nav .mobile-nav {
   background: url('img/team.png');
   background-size: cover;
   background-position: center center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 #team img {
-  display: block;
   margin: 0 auto;
+  width: 100%;
+}
+
+#team .col-4 {
+  position: relative;
 }
 
 #team .col-4 h2 {
@@ -550,16 +606,65 @@ nav .mobile-nav {
   margin-top: 0;
 }
 
+#team .col-4 .info {
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  background-color: rgba(255,255,255,.9);
+  transition: all .4s ease;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.info p {
+
+}
+
+#team .col-4:hover .info {
+  opacity: 1;
+}
 /* ================================== Contact Styles ================================== */
 #contact h3 {
   font-size: 24px;
-  text-align: center;
-  text-decoration: underline;
 }
 
 #contact p {
   font-family: Cinzel-Regular;
-  text-align: center;
+}
+
+#contact i {
+  font-size: 33px;
+  margin: 22px 10px;
+  transition: all .4s ease;
+}
+
+#contact i:hover {
+  cursor: pointer;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.fa-twitter-square:hover {
+  color: #0084b4;
+}
+
+.fa-pinterest:hover {
+  color: #BD081C;
+}
+
+.fa-yelp:hover {
+  color: #D32323;
+}
+
+.fa-google-plus:hover {
+  color: #d34836;
 }
 
 input, textarea {
@@ -587,6 +692,24 @@ button {
   padding: 10px 15px;
   border: 1px solid #FFFFFF;
   float: right;
+}
+
+button:hover {
+ cursor: pointer;
+}
+
+@media screen and (max-width: 938px ) {
+ #contact h3, #contact p {
+   text-align: center;
+ }
+
+ #contact .offset-3 {
+   margin: 0;
+ }
+
+ #contact .col-4 {
+   text-align: center;
+ }
 }
 /* ================================== Footer Styles ================================== */
 footer {
