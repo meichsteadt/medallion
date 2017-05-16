@@ -199,7 +199,7 @@ nav li:hover {
 }
 
 nav li.active {
-  color: #962D4B;
+  color: #97F9FC;
 }
 
 nav .navicon {
@@ -506,12 +506,17 @@ nav .mobile-nav {
 }
 
 #color img.scale, #clarity img.scale {
-  width: 80%;
+  width: 100%;
   max-width: 636px;
   margin: 0 auto;
   padding-top: 20px;
 }
 
+@media screen and (max-width: 683px) {
+  #color img.scale {
+    display: none;
+  }
+}
 /* ================================== Love Stories Styles ================================== */
 #love-stories .love-story h1 {
   font-size: 36px;
@@ -736,4 +741,9 @@ footer a {
 
 footer .ichor:hover a{
   color: #962D4B;
+}
+
+video {
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
